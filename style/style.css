@@ -1,0 +1,107 @@
+body {
+    margin: auto;
+    background-image: url("../album/chad-montano-eeqbbemH9-c-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+   /* font-family: Lucida Handwriting;*/
+    font-family: Bradley Hand ITC;
+}
+
+header h2 {
+    color: white;
+    font-style: italic;
+}
+
+header p {
+    color: white;
+    font-weight: bold;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-family: Bradley Hand ITC;
+    font-weight: bold;
+}
+
+section {
+    margin: auto;
+    margin-bottom: 100px;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section div {
+    flex-basis: 40%;
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(216, 213, 213, 0.3);
+    transition: ease-in-out 0.5s
+}
+
+section div:hover {
+    background-color: rgb(216, 213, 213, 0.7);
+    transition: ease-in-out 0.5s
+}
+
+section h2 {
+    font-family: Bradley Hand ITC;
+}
+
+section p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section div a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: large;
+}
+
+section div svg:hover {
+    width: 100px;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: medium;
+    color: white;
+}
+
+@media screen and (max-width:950px) {
+    section div {
+        flex-basis: 90%;
+        margin-top: 80px;
+    }
+}

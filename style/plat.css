@@ -1,0 +1,125 @@
+body {
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+}
+
+header {
+    padding: 35px;
+    background-image: url("../album/victoria-shes-UC0HZdUitWY-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: monAnim 5s alternate infinite;
+}
+
+header h2 {
+    font-size: 90px;
+    font-family: Bradley Hand ITC;
+    color: white;
+}
+
+header p {
+    color: white;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes monAnim {
+    form {
+        background-image: url("../album/victoria-shes-UC0HZdUitWY-unsplash.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    to {
+        background-image: url("../album/chad-montano-eeqbbemH9-c-unsplash.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+main {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+}
+
+main div {
+    flex-basis: 20%;
+    margin-top: 50px;
+    padding: 10px;
+    box-shadow: 0px 0px 2px gainsboro;
+}
+
+main div img {
+    width: 256px;
+    height: 200px
+}
+
+main div a {
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+main div a:hover {
+    background-color: white;
+    color: orangered;
+    border: 2px solid orangered;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.prix {
+    color: orangered;
+    font-size: x-large;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: orangered;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        padding: 0px;
+    }
+    main div {
+        flex-basis: 40%;
+    }
+
+    main div img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    main div {
+        flex-basis: 80%;
+    }
+}
